@@ -1,0 +1,20 @@
+
+//extend classes
+
+%transition2{
+  @include transitionTh(0.2s);
+}
+%transition3{
+  @include transitionTh(0.3s);
+}
+%transition4{
+  @include transitionTh(0.4s);
+}
+
+
+@for $i from 1 through 100 {
+  %radius#{$i}{
+    @include radius(#{$i}px);
+  }
+}
+

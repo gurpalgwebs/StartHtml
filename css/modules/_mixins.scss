@@ -1,0 +1,21 @@
+
+//bootstrap mixins
+@import "../../node_modules/bootstrap/scss/mixins";
+
+//theme mixins
+
+@mixin transitionTh($time){
+  -webkit-transition: all $time ease-in-out 0s;
+  -moz-transition: all $time ease-in-out 0s;
+  -ms-transition: all $time ease-in-out 0s;
+  -o-transition: all $time ease-in-out 0s;
+  transition: all $time ease-in-out 0s;
+}
+@mixin radius($value){
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  -ms-border-radius: $value;
+  -o-border-radius: $value;
+  border-radius: $value;
+}
+
