@@ -19,3 +19,70 @@
   border-radius: $value;
 }
 
+@mixin perspective($value,$origin: 'none') {
+  perspective: $value;
+  perspective-origin: $origin;
+}
+
+@mixin translate($left,$top) {
+  -webkit-transform: translate(#{$left}px, #{$top}px);  /* Chrome, Safari, Opera */
+  -moz-transform: translate(#{$left}px, #{$top}px);   /* Firefox */
+  -ms-transform: translate(#{$left}px, #{$top}px);   /* IE 9 */
+  transform: translate(#{$left}px, #{$top}px);   /* Standard syntax */
+}
+@mixin translate3d($translateX,$translateY,$translateZ) {
+  -webkit-transform: translate3d(#{$translateX}px, #{$translateY}px, #{$translateZ}px); /* Chrome, Safari, Opera */
+  -moz-transform: translate3d(#{$translateX}px, #{$translateY}px, #{$translateZ}px);  /* Firefox */
+  -ms-transform: translate3d(#{$translateX}px, #{$translateY}px, #{$translateZ}px);  /* IE 9 */
+  transform: translate3d(#{$translateX}px, #{$translateY}px, #{$translateZ}px); /* Standard syntax */
+}
+
+@mixin rotate($number) {
+  -webkit-transform: rotate(#{$number}deg);  /* Chrome, Safari, Opera */
+  -moz-transform: rotate(#{$number}deg);  /* Firefox */
+  -ms-transform: rotate(#{$number}deg);  /* IE 9 */
+  transform: rotate(#{$number}deg);  /* Standard syntax */
+}
+@mixin rotate3d($rotateX,$rotateY,$rotateZ,$number) {
+  -webkit-transform: rotate3d($rotateX, $rotateY, $rotateZ, #{$number}deg);  /* Chrome, Safari, Opera */
+  -moz-transform: rotate3d($rotateX, $rotateY, $rotateZ, #{$number}deg);  /* Firefox */
+  -ms-transform: rotate3d($rotateX, $rotateY, $rotateZ, #{$number}deg);  /* IE 9 */
+  transform: rotate3d($rotateX, $rotateY, $rotateZ, #{$number}deg);  /* Standard syntax */
+}
+@mixin skew($left,$top) {
+  -webkit-transform: skew(#{$left}deg, #{$left}deg);  /* Chrome, Safari, Opera */
+  -moz-transform: skew(#{$left}deg, #{$left}deg);  /* Firefox */
+  -ms-transform: skew(#{$left}deg, #{$left}deg);  /* IE 9 */
+  transform: skew(#{$left}deg, #{$left}deg);  /* Modern Browsers */
+}
+
+@mixin scale($decimal) {
+  -webkit-transform: scale($decimal);  /* Chrome, Safari, Opera */
+  -moz-transform: scale($decimal);  /* Firefox */
+  -ms-transform: scale($decimal);  /* IE 9 */
+  transform: scale($decimal);  /* Modern Browsers */
+}
+@mixin scale3d($scaleX,$scaleY,$scaleZ){
+  -webkit-transform: scale3d($scaleX,$scaleY,$scaleZ);  /* Chrome, Safari, Opera */
+  -moz-transform: scale3d($scaleX,$scaleY,$scaleZ);  /* Firefox */
+  -ms-transform: scale3d($scaleX,$scaleY,$scaleZ); /* IE 9 */
+  transform: scale3d($scaleX,$scaleY,$scaleZ);  /* Modern Browsers */
+}
+@mixin media-breakpoint-down-destop($name) {
+  @if $name == "xl" {
+    @media (max-width: 1365.98px) {
+      @content;
+    }
+  }
+  @if $name == "xxl" {
+    @media (max-width: 1599.98px) {
+      @content;
+    }
+  }
+  @if $name == "xxxl" {
+    @media (max-width: 1919.98px) {
+      @content;
+    }
+  }
+}
+

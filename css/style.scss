@@ -16,20 +16,16 @@ body {
 @import 'modules/extend';
 @import 'modules/utilities';
 
-
-
-.head2{
-  font-size:rem(38);
-  background-color: $primary;
-  @extend %radius30;
+.box{
+  perspective: 500px;
+  .inner{
+    border: 4px solid #e5a043;
+    background: #fff2dd;
+    width: 125px;
+    height: 125px;
+    @include scale3d(1, 1, 1);
+  }
 }
-
-
-.head1{
-  @extend %radius25;
-}
-
-
 
 @media print {
   .container {
@@ -39,25 +35,45 @@ body {
 
 
 
+// less than 1920px
+@include media-breakpoint-down-destop(xxxl) {
+  .head2 {
+    display: block;
+  }
+}
+// less than 1600px
+@include media-breakpoint-down-destop(xxl) {
+  .head2 {
+    display: block;
+  }
+}
+// less than 1366px
+@include media-breakpoint-down-destop(xl) {
+  .head2 {
+    display: block;
+  }
+}
 
-
+// less than 1200px
 @include media-breakpoint-down(lg) {
   .head2 {
     display: block;
   }
 }
+// less than 992px
 
 @include media-breakpoint-down(md) {
   .custom-class {
     display: block;
   }
 }
-
+// less than 768px
 @include media-breakpoint-down(sm) {
   .custom-class {
     display: block;
   }
 }
+// less than 576px
 @include media-breakpoint-down(xs) {
   .custom-class {
     display: block;

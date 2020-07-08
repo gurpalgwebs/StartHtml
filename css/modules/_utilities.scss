@@ -2,13 +2,10 @@
 //extend classes
 
 
-$sizes: 40px, 50px, 60px;
+$radius: 10,20,30,40,50;
 
-@each $size in $sizes {
-  .icon-#{$size} {
-    font-size: $size;
-    height: $size;
-    width: $size;
+@each $size in $radius {
+  .radius#{$size}{
+    @include radius(#{$size}px);
   }
 }
-

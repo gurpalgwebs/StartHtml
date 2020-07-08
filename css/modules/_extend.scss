@@ -1,20 +1,27 @@
 
 //extend classes
 
-%transition2{
-  @include transitionTh(0.2s);
-}
-%transition3{
-  @include transitionTh(0.3s);
-}
-%transition4{
-  @include transitionTh(0.4s);
-}
 
 
+@for $i from 2 through 50 {
+  %transition#{$i}{
+    @include transitionTh(#{$i/10}s);
+  }
+
+}
 @for $i from 1 through 100 {
   %radius#{$i}{
     @include radius(#{$i}px);
   }
+}
+%text-clipped{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+%text-ellipses{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
