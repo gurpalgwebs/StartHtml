@@ -11,13 +11,15 @@
   -o-transition: all $time ease-in-out 0s;
   transition: all $time ease-in-out 0s;
 }
-@mixin radius($value){
+@mixin rounded($value){
   -webkit-border-radius: $value;
   -moz-border-radius: $value;
   -ms-border-radius: $value;
   -o-border-radius: $value;
   border-radius: $value;
 }
+
+
 
 @mixin perspective($value,$origin: 'none') {
   perspective: $value;

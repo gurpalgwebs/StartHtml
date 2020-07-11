@@ -1,6 +1,7 @@
 * {
   outline: none !important;
 }
+
 @import 'modules/fonts';
 @import 'modules/function';
 @import 'modules/variables';
@@ -11,13 +12,18 @@ body {
   font-family: "serif", arial;
 }
 
-
-
 @import 'modules/extend';
 @import 'modules/utilities';
 
+.box2{
+  @extend %transition-35;
+}
 .box{
   perspective: 500px;
+  @extend %transition-4;
+  p{
+    font-size: rem(32);
+  }
   .inner{
     border: 4px solid #e5a043;
     background: #fff2dd;
@@ -32,6 +38,11 @@ body {
     width: auto;
   }
 }
+
+
+
+
+
 
 
 

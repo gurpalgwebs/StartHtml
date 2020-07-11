@@ -4,14 +4,14 @@
 
 
 @for $i from 2 through 50 {
-  %transition#{$i}{
+  %transition-#{$i}{
     @include transitionTh(#{$i/10}s);
   }
 
 }
 @for $i from 1 through 100 {
-  %radius#{$i}{
-    @include radius(#{$i}px);
+  %rounded-#{$i}{
+    @include rounded(#{$i}px);
   }
 }
 %text-clipped{
