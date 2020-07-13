@@ -13,6 +13,10 @@
 $body-bg: #fff;
 $body-color: #444;
 
+// Grid
+$grid-columns:      12;
+$grid-gutter-width: 30px;
+
 
 // Links
 //
@@ -45,7 +49,7 @@ $table-head-color:            $gray-700;
 
 // Paragraph
 
-$paragraph-margin-bottom:   1rem;
+$paragraph-margin-bottom:     1rem;
 
 // Buttons + Forms
 
