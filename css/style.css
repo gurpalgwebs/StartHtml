@@ -1,0 +1,345 @@
+* {
+  outline: none !important; }
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("../fonts/webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/webfont.woff2") format("woff2"), url("../fonts/webfont.woff") format("woff"), url("../fonts/webfont.ttf") format("truetype"), url("../fonts/webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+body {
+  font-family: "serif", arial; }
+
+.box {
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s; }
+
+.box2 {
+  -webkit-transition: all 3.5s ease-in-out 0s;
+  -moz-transition: all 3.5s ease-in-out 0s;
+  -ms-transition: all 3.5s ease-in-out 0s;
+  -o-transition: all 3.5s ease-in-out 0s;
+  transition: all 3.5s ease-in-out 0s; }
+
+.rounded-10 {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+
+.rounded-20 {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px; }
+
+.rounded-30 {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px; }
+
+.rounded-40 {
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-radius: 40px; }
+
+.rounded-50 {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px; }
+
+.gutter-10 {
+  margin-right: -5px;
+  margin-left: -5px; }
+  .gutter-10 > .col,
+  .gutter-10 > [class*="col-"] {
+    padding-right: 5px;
+    padding-left: 5px; }
+
+.gutter-20 {
+  margin-right: -10px;
+  margin-left: -10px; }
+  .gutter-20 > .col,
+  .gutter-20 > [class*="col-"] {
+    padding-right: 10px;
+    padding-left: 10px; }
+
+.gutter-30 {
+  margin-right: -15px;
+  margin-left: -15px; }
+  .gutter-30 > .col,
+  .gutter-30 > [class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px; }
+
+.gutter-40 {
+  margin-right: -20px;
+  margin-left: -20px; }
+  .gutter-40 > .col,
+  .gutter-40 > [class*="col-"] {
+    padding-right: 20px;
+    padding-left: 20px; }
+
+.gutter-50 {
+  margin-right: -25px;
+  margin-left: -25px; }
+  .gutter-50 > .col,
+  .gutter-50 > [class*="col-"] {
+    padding-right: 25px;
+    padding-left: 25px; }
+
+.gutter-60 {
+  margin-right: -30px;
+  margin-left: -30px; }
+  .gutter-60 > .col,
+  .gutter-60 > [class*="col-"] {
+    padding-right: 30px;
+    padding-left: 30px; }
+
+.gutter-80 {
+  margin-right: -40px;
+  margin-left: -40px; }
+  .gutter-80 > .col,
+  .gutter-80 > [class*="col-"] {
+    padding-right: 40px;
+    padding-left: 40px; }
+
+@media (min-width: 576px) {
+  .gutter-sm-10 {
+    margin-right: -5px;
+    margin-left: -5px; }
+    .gutter-sm-10 > .col,
+    .gutter-sm-10 > [class*="col-"] {
+      padding-right: 5px;
+      padding-left: 5px; }
+  .gutter-sm-20 {
+    margin-right: -10px;
+    margin-left: -10px; }
+    .gutter-sm-20 > .col,
+    .gutter-sm-20 > [class*="col-"] {
+      padding-right: 10px;
+      padding-left: 10px; }
+  .gutter-sm-30 {
+    margin-right: -15px;
+    margin-left: -15px; }
+    .gutter-sm-30 > .col,
+    .gutter-sm-30 > [class*="col-"] {
+      padding-right: 15px;
+      padding-left: 15px; }
+  .gutter-sm-40 {
+    margin-right: -20px;
+    margin-left: -20px; }
+    .gutter-sm-40 > .col,
+    .gutter-sm-40 > [class*="col-"] {
+      padding-right: 20px;
+      padding-left: 20px; }
+  .gutter-sm-50 {
+    margin-right: -25px;
+    margin-left: -25px; }
+    .gutter-sm-50 > .col,
+    .gutter-sm-50 > [class*="col-"] {
+      padding-right: 25px;
+      padding-left: 25px; }
+  .gutter-sm-60 {
+    margin-right: -30px;
+    margin-left: -30px; }
+    .gutter-sm-60 > .col,
+    .gutter-sm-60 > [class*="col-"] {
+      padding-right: 30px;
+      padding-left: 30px; }
+  .gutter-sm-80 {
+    margin-right: -40px;
+    margin-left: -40px; }
+    .gutter-sm-80 > .col,
+    .gutter-sm-80 > [class*="col-"] {
+      padding-right: 40px;
+      padding-left: 40px; } }
+
+@media (min-width: 768px) {
+  .gutter-md-10 {
+    margin-right: -5px;
+    margin-left: -5px; }
+    .gutter-md-10 > .col,
+    .gutter-md-10 > [class*="col-"] {
+      padding-right: 5px;
+      padding-left: 5px; }
+  .gutter-md-20 {
+    margin-right: -10px;
+    margin-left: -10px; }
+    .gutter-md-20 > .col,
+    .gutter-md-20 > [class*="col-"] {
+      padding-right: 10px;
+      padding-left: 10px; }
+  .gutter-md-30 {
+    margin-right: -15px;
+    margin-left: -15px; }
+    .gutter-md-30 > .col,
+    .gutter-md-30 > [class*="col-"] {
+      padding-right: 15px;
+      padding-left: 15px; }
+  .gutter-md-40 {
+    margin-right: -20px;
+    margin-left: -20px; }
+    .gutter-md-40 > .col,
+    .gutter-md-40 > [class*="col-"] {
+      padding-right: 20px;
+      padding-left: 20px; }
+  .gutter-md-50 {
+    margin-right: -25px;
+    margin-left: -25px; }
+    .gutter-md-50 > .col,
+    .gutter-md-50 > [class*="col-"] {
+      padding-right: 25px;
+      padding-left: 25px; }
+  .gutter-md-60 {
+    margin-right: -30px;
+    margin-left: -30px; }
+    .gutter-md-60 > .col,
+    .gutter-md-60 > [class*="col-"] {
+      padding-right: 30px;
+      padding-left: 30px; }
+  .gutter-md-80 {
+    margin-right: -40px;
+    margin-left: -40px; }
+    .gutter-md-80 > .col,
+    .gutter-md-80 > [class*="col-"] {
+      padding-right: 40px;
+      padding-left: 40px; } }
+
+@media (min-width: 992px) {
+  .gutter-lg-10 {
+    margin-right: -5px;
+    margin-left: -5px; }
+    .gutter-lg-10 > .col,
+    .gutter-lg-10 > [class*="col-"] {
+      padding-right: 5px;
+      padding-left: 5px; }
+  .gutter-lg-20 {
+    margin-right: -10px;
+    margin-left: -10px; }
+    .gutter-lg-20 > .col,
+    .gutter-lg-20 > [class*="col-"] {
+      padding-right: 10px;
+      padding-left: 10px; }
+  .gutter-lg-30 {
+    margin-right: -15px;
+    margin-left: -15px; }
+    .gutter-lg-30 > .col,
+    .gutter-lg-30 > [class*="col-"] {
+      padding-right: 15px;
+      padding-left: 15px; }
+  .gutter-lg-40 {
+    margin-right: -20px;
+    margin-left: -20px; }
+    .gutter-lg-40 > .col,
+    .gutter-lg-40 > [class*="col-"] {
+      padding-right: 20px;
+      padding-left: 20px; }
+  .gutter-lg-50 {
+    margin-right: -25px;
+    margin-left: -25px; }
+    .gutter-lg-50 > .col,
+    .gutter-lg-50 > [class*="col-"] {
+      padding-right: 25px;
+      padding-left: 25px; }
+  .gutter-lg-60 {
+    margin-right: -30px;
+    margin-left: -30px; }
+    .gutter-lg-60 > .col,
+    .gutter-lg-60 > [class*="col-"] {
+      padding-right: 30px;
+      padding-left: 30px; }
+  .gutter-lg-80 {
+    margin-right: -40px;
+    margin-left: -40px; }
+    .gutter-lg-80 > .col,
+    .gutter-lg-80 > [class*="col-"] {
+      padding-right: 40px;
+      padding-left: 40px; } }
+
+@media (min-width: 1200px) {
+  .gutter-xl-10 {
+    margin-right: -5px;
+    margin-left: -5px; }
+    .gutter-xl-10 > .col,
+    .gutter-xl-10 > [class*="col-"] {
+      padding-right: 5px;
+      padding-left: 5px; }
+  .gutter-xl-20 {
+    margin-right: -10px;
+    margin-left: -10px; }
+    .gutter-xl-20 > .col,
+    .gutter-xl-20 > [class*="col-"] {
+      padding-right: 10px;
+      padding-left: 10px; }
+  .gutter-xl-30 {
+    margin-right: -15px;
+    margin-left: -15px; }
+    .gutter-xl-30 > .col,
+    .gutter-xl-30 > [class*="col-"] {
+      padding-right: 15px;
+      padding-left: 15px; }
+  .gutter-xl-40 {
+    margin-right: -20px;
+    margin-left: -20px; }
+    .gutter-xl-40 > .col,
+    .gutter-xl-40 > [class*="col-"] {
+      padding-right: 20px;
+      padding-left: 20px; }
+  .gutter-xl-50 {
+    margin-right: -25px;
+    margin-left: -25px; }
+    .gutter-xl-50 > .col,
+    .gutter-xl-50 > [class*="col-"] {
+      padding-right: 25px;
+      padding-left: 25px; }
+  .gutter-xl-60 {
+    margin-right: -30px;
+    margin-left: -30px; }
+    .gutter-xl-60 > .col,
+    .gutter-xl-60 > [class*="col-"] {
+      padding-right: 30px;
+      padding-left: 30px; }
+  .gutter-xl-80 {
+    margin-right: -40px;
+    margin-left: -40px; }
+    .gutter-xl-80 > .col,
+    .gutter-xl-80 > [class*="col-"] {
+      padding-right: 40px;
+      padding-left: 40px; } }
+
+.box {
+  perspective: 500px; }
+  .box p {
+    font-size: 2rem; }
+  .box .inner {
+    border: 4px solid #e5a043;
+    background: #fff2dd;
+    width: 125px;
+    height: 125px;
+    -webkit-transform: scale3d(1, 1, 1);
+    /* Chrome, Safari, Opera */
+    -moz-transform: scale3d(1, 1, 1);
+    /* Firefox */
+    -ms-transform: scale3d(1, 1, 1);
+    /* IE 9 */
+    transform: scale3d(1, 1, 1);
+    /* Modern Browsers */ }
+
+@media print {
+  .container {
+    width: auto; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -2,7 +2,27 @@
 
 
 
+//map merge
 
+$theme-colors: (
+  "gray": #333,
+);
+
+$spacer: 1rem;
+
+$spacers: (
+        0: 0,
+        1: ($spacer * 0.25),
+        2: ($spacer * 0.5),
+        3: ($spacer * 0.75),
+        4:  $spacer,
+        5: ($spacer * 1.25),
+        6: ($spacer * 1.75),
+        7: ($spacer * 2.5),
+        8: ($spacer * 3.5),
+);
+
+//$sizes: ();
 
 //bootstrap variables
 @import "../../node_modules/bootstrap/scss/variables";
@@ -151,24 +171,4 @@ $print-page-size:             a4;
 $print-body-min-width:        map-get($grid-breakpoints, "lg");
 
 
-
-//map merge
-
-$theme-colors: (
-    "gray": #333,
-);
-
-$spacers: (
-        0: 0,
-        1: ($spacer * 0.25),
-        2: ($spacer * 0.5),
-        3: ($spacer * 0.75),
-        4:  $spacer,
-        5: ($spacer * 1.25),
-        6: ($spacer * 1.75),
-        7: ($spacer * 2.5),
-        8: ($spacer * 3.5),
-);
-
-$sizes: ();
 

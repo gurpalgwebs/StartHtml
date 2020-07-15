@@ -48,47 +48,33 @@ body {
 
 // less than 1920px
 @include media-breakpoint-down-destop(xxxl) {
-  .head2 {
-    display: block;
-  }
+
 }
 // less than 1600px
 @include media-breakpoint-down-destop(xxl) {
-  .head2 {
-    display: block;
-  }
+
 }
 // less than 1366px
 @include media-breakpoint-down-destop(xl) {
-  .head2 {
-    display: block;
-  }
+
 }
 
 // less than 1200px
 @include media-breakpoint-down(lg) {
-  .head2 {
-    display: block;
-  }
+
 }
 // less than 992px
 
 @include media-breakpoint-down(md) {
-  .custom-class {
-    display: block;
-  }
+
 }
 // less than 768px
 @include media-breakpoint-down(sm) {
-  .custom-class {
-    display: block;
-  }
+
 }
 // less than 576px
 @include media-breakpoint-down(xs) {
-  .custom-class {
-    display: block;
-  }
+
 }
 
 
