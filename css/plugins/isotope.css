@@ -1,0 +1,13 @@
+
+
+
+
+.grid{
+
+  padding: 40px 0;
+}
+.grid .grid-item {
+  width:33%;
+  padding:10px;
+  float: left;
+}

@@ -2,7 +2,6 @@
 //extend classes
 
 
-
 @for $i from 2 through 50 {
   %transition-#{$i}{
     @include transitionTh(#{$i/10}s);
@@ -23,5 +22,12 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+%user-select-none{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
 }
 
