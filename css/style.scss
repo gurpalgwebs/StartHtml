@@ -2,6 +2,8 @@
   outline: none !important;
 }
 
+
+
 @import 'modules/fonts';
 @import 'modules/function';
 @import 'modules/variables';
@@ -11,7 +13,6 @@
 body {
   font-family: "serif", arial;
 }
-
 
 @import 'modules/extend';
 @import 'modules/utilities';
@@ -39,13 +40,6 @@ body {
     width: auto;
   }
 }
-
-
-
-
-
-
-
 
 // less than 1920px
 @include media-breakpoint-down-destop(xxxl) {
