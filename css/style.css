@@ -1,29 +1,28 @@
 * {
   outline: none !important; }
 
-@font-face {
-  font-family: 'MyWebFont';
-  src: url("../fonts/webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/webfont.woff2") format("woff2"), url("../fonts/webfont.woff") format("woff"), url("../fonts/webfont.ttf") format("truetype"), url("../fonts/webfont.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
-
 body {
   font-family: "serif", arial; }
 
-.box {
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  -ms-transition: all 0.4s ease-in-out 0s;
-  -o-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s; }
+.text-clipped {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip; }
 
-.box2 {
-  -webkit-transition: all 3.5s ease-in-out 0s;
-  -moz-transition: all 3.5s ease-in-out 0s;
-  -ms-transition: all 3.5s ease-in-out 0s;
-  -o-transition: all 3.5s ease-in-out 0s;
-  transition: all 3.5s ease-in-out 0s; }
+.text-ellipses {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.user-select-none {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */ }
 
 .rounded-10 {
   -webkit-border-radius: 10px;
@@ -320,23 +319,9 @@ body {
       padding-right: 40px;
       padding-left: 40px; } }
 
-.box {
-  perspective: 500px; }
-  .box p {
-    font-size: 2rem; }
-  .box .inner {
-    border: 4px solid #e5a043;
-    background: #fff2dd;
-    width: 125px;
-    height: 125px;
-    -webkit-transform: scale3d(1, 1, 1);
-    /* Chrome, Safari, Opera */
-    -moz-transform: scale3d(1, 1, 1);
-    /* Firefox */
-    -ms-transform: scale3d(1, 1, 1);
-    /* IE 9 */
-    transform: scale3d(1, 1, 1);
-    /* Modern Browsers */ }
+.box p {
+  color: red;
+  font-size: 1.0625rem; }
 
 @media print {
   .container {

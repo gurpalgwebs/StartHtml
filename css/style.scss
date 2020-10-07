@@ -2,12 +2,12 @@
   outline: none !important;
 }
 
-
-
 @import 'modules/fonts';
 @import 'modules/function';
 @import 'modules/variables';
 @import 'modules/mixins';
+
+
 
 
 body {
@@ -17,23 +17,28 @@ body {
 @import 'modules/extend';
 @import 'modules/utilities';
 
-.box2{
-  @extend %transition-35;
-}
+
+
 .box{
-  perspective: 500px;
-  @extend %transition-4;
   p{
-    font-size: rem(32);
-  }
-  .inner{
-    border: 4px solid #e5a043;
-    background: #fff2dd;
-    width: 125px;
-    height: 125px;
-    @include scale3d(1, 1, 1);
+    color:$mycolor;
+    font-size: rem(17);
+    &:hover{
+
+    }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 @media print {
   .container {

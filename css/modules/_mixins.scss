@@ -4,6 +4,9 @@
 
 //theme mixins
 
+
+
+// transitionTh(0.3s)
 @mixin transitionTh($time){
   -webkit-transition: all $time ease-in-out 0s;
   -moz-transition: all $time ease-in-out 0s;
@@ -11,6 +14,8 @@
   -o-transition: all $time ease-in-out 0s;
   transition: all $time ease-in-out 0s;
 }
+
+// rounded(10px)
 @mixin rounded($value){
   -webkit-border-radius: $value;
   -moz-border-radius: $value;

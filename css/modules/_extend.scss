@@ -1,30 +1,34 @@
 
 //extend classes
 
+// %transition-10
 
 @for $i from 2 through 50 {
   %transition-#{$i}{
     @include transitionTh(#{$i/10}s);
   }
-
 }
+
+// %rounded-10
+
 @for $i from 1 through 100 {
   %rounded-#{$i}{
     @include rounded(#{$i}px);
   }
 }
-%text-clipped{
+
+.text-clipped{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: clip;
 }
-%text-ellipses{
+.text-ellipses{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-%user-select-none{
+.user-select-none{
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
